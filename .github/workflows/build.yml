@@ -18,7 +18,7 @@ jobs:
         run: npm i pkg -g
 
       - name: Build assembler
-        run: pkg assembler/assembler.js -o rc-assembler
+        run: pkg assembler/assembler.js -o rc-assembler -t node16-linux,node16-win,node16-macos
 
       - name: Build compiler
         run: pkg compiler/compiler.js -o rc-compiler
