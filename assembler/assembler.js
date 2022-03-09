@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 var fs = require('fs');
 var args = process.argv;
 var code = [];
@@ -11,7 +10,7 @@ fs.readFile(args[2], function(err, data) {
       var line = data.toString().split('\n')[i];
       var params = line.split(' ');
       if (params[0] == '#') {
-        
+
       }
       if (params[0] == 'STA') {
         code.push(1, parseInt(params[1]));

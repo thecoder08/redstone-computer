@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 var fs = require('fs');
 var args = process.argv;
 fs.readFile(args[2], function(err, data) {

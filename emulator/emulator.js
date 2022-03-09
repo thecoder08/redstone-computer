@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 //global bus variables
 var inbus = 0;
 var outbus = 0;
