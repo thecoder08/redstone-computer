@@ -20,6 +20,9 @@ jobs:
       - name: Build executables
         run: pkg .
 
+      - name: List files
+        run: ls
+
       - name: Create Linux archive
         run: tar -czvf linux.tar.gz rc-assembler-linux rc-compiler-linux rc-disassembler-linux rc-emulator-linux rc-uploader-linux
 
