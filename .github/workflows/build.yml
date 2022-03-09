@@ -30,7 +30,7 @@ jobs:
         run: pkg emulator/emulator.js -o rc-emulator
 
       - name: Build uploader
-        run: pkg uploader.js -o rc-uploader
+        run: pkg uploader/uploader.js -o rc-uploader
 
       - name: List files
         run: ls
