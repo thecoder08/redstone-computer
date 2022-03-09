@@ -1,0 +1,17 @@
+{
+  "name": "redstone-computer",
+  "version": "1.0.1",
+  "description": "Utilities for programming my redstone computer.",
+  "bin": {
+    "rc-assembler": "assembler/assembler.js",
+    "rc-compiler": "compiler/compiler.js",
+    "rc-disassembler": "disassembler/disassembler.js",
+    "rc-emulator": "emulator/emulator.js",
+    "rc-uploader": "uploader/uploader.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thecoder08",
+  "license": "MIT"
+}
