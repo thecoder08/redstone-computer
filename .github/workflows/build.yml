@@ -17,8 +17,20 @@ jobs:
       - name: Install pkg
         run: npm i pkg -g
 
-      - name: Build executables
-        run: pkg .
+      - name: Build assembler
+        run: pkg assembler/assembler.js -o rc-assembler
+
+      - name: Build compiler
+        run: pkg compiler/compiler.js -o rc-compiler
+
+      - name: Build disassembler
+        run: pkg disassembler/disassembler.js -o rc-disassembler
+
+      - name: Build emulator
+        run: pkg emulator/emulator.js -o rc-emulator
+
+      - name: Build uploader
+        run: pkg uploader.js -o rc-uploader
 
       - name: List files
         run: ls
