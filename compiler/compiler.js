@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 var fs = require('fs');
 var args = process.argv;
 var memoryAddress = args[3];
