@@ -21,16 +21,16 @@ jobs:
         run: pkg assembler/assembler.js -o rc-assembler -t node16-linux,node16-win,node16-macos
 
       - name: Build compiler
-        run: pkg compiler/compiler.js -o rc-compiler
+        run: pkg compiler/compiler.js -o rc-compiler -t node16-linux,node16-win,node16-macos
 
       - name: Build disassembler
-        run: pkg disassembler/disassembler.js -o rc-disassembler
+        run: pkg disassembler/disassembler.js -o rc-disassembler -t node16-linux,node16-win,node16-macos
 
       - name: Build emulator
-        run: pkg emulator/emulator.js -o rc-emulator
+        run: pkg emulator/emulator.js -o rc-emulator -t node16-linux,node16-win,node16-macos
 
       - name: Build uploader
-        run: pkg uploader/uploader.js -o rc-uploader
+        run: pkg uploader/uploader.js -o rc-uploader -t node16-linux,node16-win,node16-macos
 
       - name: List files
         run: ls
