@@ -1,0 +1,11 @@
+{
+  "name": "rc-emulator",
+  "version": "1.0.1",
+  "description": "A redstone computer emulator because the real thing is hella slow.",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thecoder08",
+  "license": "MIT"
+}
