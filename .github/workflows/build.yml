@@ -21,7 +21,7 @@ jobs:
         run: pkg .
 
       - name: Create Linux archive
-        run: tar -czvf linux.tar.gz
+        run: tar -czvf linux.tar.gz rc-assembler-linux rc-compiler-linux rc-disassembler-linux rc-emulator-linux rc-uploader-linux
 
       - name: Create Windows archive
         run: zip windows.zip
