@@ -24,25 +24,25 @@ jobs:
         run: tar -czvf linux.tar.gz rc-assembler-linux rc-compiler-linux rc-disassembler-linux rc-emulator-linux rc-uploader-linux
 
       - name: Create Windows archive
-        run: zip windows.zip
+        run: zip windows.zip rc-assembler-win.exe rc-compiler-win.exe rc-disassembler-win.exe rc-emulator-win.exe rc-uploader-win.exe
 
       - name: Create MacOS archive
-        run: zip macos.zip
+        run: zip macos.zip rc-assembler-macos rc-compiler-macos rc-disassembler-macos rc-emulator-macos rc-uploader-macos
 
       - name: Upload Windows build
         uses: actions/upload-artifact@v2
         with:
-          name: coyote-win.exe
-          path: coyote-win.exe
+          name: windows.zip
+          path: windows.zip
 
       - name: Upload Linux build
         uses: actions/upload-artifact@v2
         with:
-          name: coyote-linux
-          path: coyote-linux
+          name: linux.tar.gz
+          path: linux.tar.gz
 
       - name: Upload MacOS build
         uses: actions/upload-artifact@v2
         with:
-          name: coyote-macos
-          path: coyote-macos
+          name: macos.zip
+          path: macos.zip
